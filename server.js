@@ -28,6 +28,10 @@ app.get('/translations', (req, res) => {
     res.render('pages/translations', siteData)
 });
 
+app.get('/landscape-photos', (req, res) => {
+    res.render('pages/landscape-photos', siteData)
+});
+
 app.listen(port, () => {
     console.log(`Listening at http://localhost:${port}`);
 });
