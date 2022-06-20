@@ -1,18 +1,19 @@
 <%- include('../partials/header');%>
-	<h2><b>Local JSON file: </b>There are <%=books.length%> books.</h2>
+	<h2><b>Local Excel file: </b>There are <%=translations.length%> translations.</h2>
 	<div class="content">
 		<ul>
 			<% for(const
-			   book
+			   translation
 			   of
-			   books)
+			   translations)
 			   {
 			   %>
 				<li>
-					<%=book.title%>
+					<%=translation.fromPhrase%>
 				</li>
 				<%}%>
 					<li>...</li>
 		</ul>
 	</div>
+
 	<%- include('../partials/footer');%>
