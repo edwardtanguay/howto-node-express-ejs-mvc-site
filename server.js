@@ -1,6 +1,5 @@
 import express from 'express';
 import { siteData } from './src/models.js';
-import { siteView } from './src/views.js';
 import path from 'path';
 
 const app = express();
