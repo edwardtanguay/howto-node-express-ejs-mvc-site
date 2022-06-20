@@ -1,0 +1,18 @@
+<%- include('../partials/header');%>
+	<h2><b>Local JSON file: </b>There are <%=books.length%> books.</h2>
+	<div class="content">
+		<ul>
+			<% for(const
+			   book
+			   of
+			   books.slice(0,3))
+			   {
+			   %>
+				<li>
+					<%=book.title%>
+				</li>
+				<%}%>
+					<li>...</li>
+		</ul>
+	</div>
+	<%- include('../partials/footer');%>

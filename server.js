@@ -12,12 +12,16 @@ app.set('views', path.join(__dirname, './public/views'));
 
 app.use(express.static('public'));
 
-// app.get('/', (req, res) => {
-//     res.send(siteView(siteData));
-// });
-
 app.get('/', (req, res) => {
     res.render('pages/index', siteData)
+});
+
+app.get('/nouns', (req, res) => {
+    res.render('pages/nouns', siteData)
+});
+
+app.get('/books', (req, res) => {
+    res.render('pages/books', siteData)
 });
 
 app.listen(port, () => {

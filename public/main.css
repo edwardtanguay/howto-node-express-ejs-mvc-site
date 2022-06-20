@@ -34,3 +34,8 @@ div.job {
 a {
 	color: rgb(229, 229, 169);
 }
+
+nav a {
+	text-decoration: none;
+	color: orange;
+}
